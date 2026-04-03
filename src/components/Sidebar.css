@@ -1,0 +1,56 @@
+.sidebar {
+    width: 250px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 16px;
+    height: fit-content;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h2 {
+    margin-bottom: 15px;
+    color: black
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h4 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #333;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.checkbox-label:hover {
+    color: #2563eb;
+}
+
+.checkbox-label input {
+    cursor: pointer;
+    accent-color: #2563eb;
+    margin: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.price-slider {
+    width: 100%;
+    margin-top: 5px;
+    accent-color: #1e428a;
+}

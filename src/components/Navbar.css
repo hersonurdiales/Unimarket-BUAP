@@ -1,0 +1,98 @@
+/* src/components/Navbar.css */
+.navbar {
+    background: #1e428a;
+    /* Azul profundo */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.title-link {
+    text-decoration: none;
+}
+
+.title {
+    color: white !important;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search {
+    flex: 1;
+    max-width: 400px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s;
+    min-width: 130px;
+    box-sizing: border-box;
+}
+
+.publish-btn {
+    background: #467ebe;
+    color: white;
+    border: none;
+}
+
+.publish-btn:hover {
+    background: #2f5581;
+}
+
+.login-btn,
+.profile-btn {
+    background: white;
+    color: #1e3a8a;
+    border: 2px solid white;
+}
+
+.login-btn:hover,
+.profile-btn:hover {
+    background: transparent;
+    color: white;
+}
+
+.logout-btn {
+    background: transparent;
+    color: #cbd5e1;
+    border: 2px solid transparent;
+    min-width: auto;
+}
+
+.logout-btn:hover {
+    color: white;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

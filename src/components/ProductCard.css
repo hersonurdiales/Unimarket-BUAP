@@ -1,0 +1,168 @@
+.card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.fav-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    transition: 0.2s;
+    z-index: 10;
+}
+
+.fav-btn:hover {
+    transform: scale(1.1);
+}
+
+.fav-btn.active {
+    color: #1e428a;
+    /* red-500 */
+}
+
+.card-actions-admin {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.action-btn {
+    background: white;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+}
+
+.action-btn.edit {
+    color: #2563eb;
+}
+
+.action-btn.delete {
+    color: #ef4444;
+}
+
+.action-btn:hover {
+    transform: scale(1.05);
+    background: #f8fafc;
+}
+
+.delivery-tag {
+    font-size: 10px;
+    background: #f1f5f9;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+    padding: 3px 6px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    background: #eee;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 30px;
+    color: #aaa;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+}
+
+.description-preview {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4;
+}
+
+.price {
+    font-weight: bold;
+    color: #2563eb;
+    margin-top: 5px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.tag {
+    font-size: 10px;
+    padding: 3px 6px;
+    border-radius: 6px;
+}
+
+.tag.Nuevo {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.tag.Usado {
+    background: #dbeafe;
+    color: #1e3a8a;
+}
+
+.faculty {
+    font-size: 10px;
+    background: #eee;
+    padding: 3px 6px;
+    border-radius: 6px;
+}
